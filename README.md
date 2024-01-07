@@ -35,7 +35,11 @@ cd wow-combat-logs
 ```
 
 ### Usage
-Run the script with the path to your combat log file:
+First you need to enable combat logs in WoW.
+1. Login to WoW
+2. Type `/combatlog` in chat
+3. Update the log file name in the wow_logs.py file to match your log file.
+4. Run the script with the path to your combat log file:
 
 ```
 python wow_logs.py
