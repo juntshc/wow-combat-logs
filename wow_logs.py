@@ -86,7 +86,7 @@ def plot_attack_sequence(events):
     base_time = None
 
     for event in events:
-        if event['event_type'] in ['SPELL_CAST_SUCCESS', 'SPELL_DAMAGE']:
+        if event['event_type'] in ['SPELL_DAMAGE', 'SWING_DAMAGE']:
             timestamp = parse_timestamp(event['timestamp'])
             if base_time is None:
                 base_time = timestamp
